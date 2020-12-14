@@ -2,7 +2,8 @@
 Phil Bell's Data Science Portfolio
 
 
-##Project 1: Predicting the 2020 US election: House, Senate, President
+**Project 1: Predicting the 2020 US election: House, Senate, President**
+
 ![](/images/Graph of Predictors.png)
 
 Four sets of models were used to predict the 2020 Presidential election results.
