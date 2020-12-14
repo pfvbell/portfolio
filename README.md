@@ -9,6 +9,8 @@ Four sets of models were used to predict the 2020 Presidential election results.
 
 ![](/images/rf_preds_map_2.png)
 
+[test](strike_rate_map.jpg)
+
 [See full Github Repo](https://github.com/pfvbell/president)
 
 
