@@ -16,7 +16,7 @@ This entry was placed 252 in the kaggle competition with a final test accuracy o
 Images of kannada digits were classified as '0' or '1' using a regularised feed-forward neural network (including L2 and dropout). 2000 epochs were used, with a batch size of 32.
 
 Below is the accuracy (left) and loss (right).
-![](/images/Accuracy%20and%20Loss.png)
+![](/images/accuracy_and_loss.png)
 
 
 # **Project 3: Exploring Neural Network interpretability through predicting flight delay**
