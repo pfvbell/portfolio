@@ -2,7 +2,8 @@
 Phil Bell's Data Science Portfolio
 
 
-[# Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**](https://github.com/pfvbell/president)
+# Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election
+[Full Github]((https://github.com/pfvbell/president)
 
 ## Predicting the 2020 Presidential Elections
 
@@ -67,29 +68,25 @@ From the relatively higher performance of the Lasso compared to the unregularize
 
 ### Results and Conclusions
 
-
 ![](https://github.com/pfvbell/president/blob/main/Graph%20of%20Predictors.png)
 
 
 Based on these accuracies Lasso Logistic Regression model was chosen, as its validation  accuracy (91%) was higher than the Random Forest or Neural Network validation scores, even though its training accuracy was not as high as the random Forest training accuracy. The final model chosen was therefore the Lasso model with a final accuracy on the test set of 92.2%.
 
 Lasso Logistic Regression Probabilities of prediction of Republican or Democrat for each state:
-
 ![](https://github.com/pfvbell/president/blob/main/lasso_preds_map_2.png)
 
 Random Forest Probabilities of prediction of Republican or Democrat for each state:
-
 ![](https://github.com/pfvbell/president/blob/main/rf_preds_map_2.png)
 
 It is useful to note that the logistic lasso model and neural network models were less secure in their predictions compared to the random forest model. Therefore, the random forest model is more likely to vary when applied to different sets of data. This makes the model overly flexible, which is another reason why lasso logistic regression is preferable as the final model.
 
-# Limitations
+### Limitations
 There were systematic inaccuracies with 2020 polling data that were not captured with previous polls. In 2016 the major inaccuracy was caused by undersampling of non-college voters. This sampling error was corrected by most polling organisations in 2020 [7]. However, there are clearly other errors in the 2020 data that have not yet been unearthed. One theory is that those who refuse phone surveys are more likely to be anti-establishment, and therefore polling reflects this.
 
 It is not clear that there is a trend of polling errors between elections on a geographical level. Indeed, the polls predicted some states very closely (for example Minnesota) and some very poorly, such as Florida in 2020. It is not yet clear why this is the case.
 
 Due to the inherent uncertainty in using polling data to predict election results in future this project could be improved by more succinctly visualising and communicating the prediction uncertainties. In future it may be necessary to move beyond the dichotomy between so-called ‘fundamentals models’ (using demographic and economic data) and polling data, and triangulate both these approaches using new methods, such as sentiment analysis and social network graph analysis.
-
 
 ### References
 FiveThirtyEight Election Forecast, 2020. https://projects.fivethirtyeight.com/2020-election-forecast/. Accessed November 3, 2020.
@@ -114,7 +111,8 @@ Wikipedia contributors. (2020, December 13). 2020 United States House of Represe
 Lichtman, Allan. “The Keys to the White House: Forecast for 2020 · 2.4.” Harvard Data Science Review, PubPub, 27 Oct. 2020, hdsr.mitpress.mit.edu/pub/xhgpcyoa/release/2. 
 
 
-[# Project: Exploring Neural Network interpretability through predicting flight delay](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
+# Project: Exploring Neural Network interpretability through predicting flight delay
+[Full Github](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
 
 ### Modeling
 This project mainly aims to explore the uncertainty in feedforward neural networks. First an artificial neural network was fit. This was an overfit artificial neural network, as can be seen below. The aim was not to fit a very accurate model, but rather to explore the predictions made and the certainty with which they were made. 
@@ -151,7 +149,9 @@ To further measure the uncertainty of the model we build a model which abstains 
 The test accuracy increases as the PPR decreases, apart from an outlier result at PPR=0.2. However, it seems that there is only a very close association between test accuracy and PPR at very low PPR values. This suggests that the PPR threshold for this abstain model may need to be much lower than 0.5 if it is to be highley predictive. Depending on the level of test accuracy needed, it may have to be as low as 0.05. However, this may mean that very few observations could be used. Overall it is clear that many of the bagged predictions are not predicted with high confidence. Indeed, as the PPR decreases the proportion of test observations not abstained also increases. This relationship is close to linear.
 
 
-[# Project : What are the most common global education indicators? (using SQL)**](https://www.kaggle.com/philipbell/sql-world-bank)
+# Project : What are the most common global education indicators? (using SQL)
+[Full Project](https://www.kaggle.com/philipbell/sql-world-bank)
+
 Educational Research is relatively [new](http://https://tannerlectures.utah.edu/Allen%20manuscript.pdf) as a field distinct from other social sciences, such as economics and psychology. 
 
 The World Bank International Education database provides a landscape view of both indicators of educational achievement, and also the types of studies conducted. Mining the information on this large dataset therefore provides useful insights into the way in which measurement of educational achievement may itself impact the nature of the education (akin to what Physicists call the 'observer effect'.
@@ -162,7 +162,8 @@ Sub-questions included the average spending as a percentage of GDP for all count
 
 Add Image of output (as graph).
 
-[# Project: Covid data scraper](https://github.com/pfvbell/covid_data_scraper)
+# Project: Covid data scraper
+[Full Github](https://github.com/pfvbell/covid_data_scraper)
 Scraping and Analysing Covid data
 
 Up-to-date covid data was scraped from https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/state. This was then analysed in order to find the highest number of deaths per county and the highest death rate.
