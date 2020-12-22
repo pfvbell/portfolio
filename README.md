@@ -2,9 +2,9 @@
 Phil Bell's Data Science Portfolio
 
 
-[**Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**](https://github.com/pfvbell/president)
+[# Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**](https://github.com/pfvbell/president)
 
-# Predicting the 2020 Presidential Elections
+## Predicting the 2020 Presidential Elections
 
 Modelling US presidential elections, in particular, is especially difficult due to the lack of example elections, as there have only been 58 presidential elections in the history of the US. This problem is exacerbated by the unique circumstances surrounding the 2020 election, largely due to the implications of the COVID-19 pandemic. Though only three incumbent presidents have lost in the last 100 years, President Trump is facing growing scrutiny for his response (or lack thereof) to the pandemic and its impact on the economy and the welfare of American citizens, and Joe Biden has maintained a consistent lead over incumbent President Trump in opinion polls before the election [1]. The widespread usage of mail-in ballots will also change the voter turnout and voter demographic, further influencing the result of the election.
 
@@ -26,7 +26,7 @@ Here we see the results from the 2012 election:
 
 ![](https://github.com/pfvbell/president/blob/main/2012_results_map.png)
 
-# EDA
+### EDA
 The best predictor, from a t-test analysis, was polls_outcome, which indicated the party favored to win in state-wide opinion polls. However, there was uncertainty associated with polls_outcome. 
 
 
@@ -45,7 +45,7 @@ Here we see the percentage of correct poll outcomes for each state from 1980-201
 
 Above we can see that polls in some states, such as Florida and North Carolina, Wisconsin, Pennsylvania and Michigan have been less predictive of the outcome of the election compared to polls in other states.
 
-# Model Selection
+### Model Selection
 The accuracy of four sets of models (logistic regression, KNN, random forest and neural networks) was calculated on the training set and the evaluation set. (See appendix 3)
 
 First a logistic regression model was fit. This was the baseline model using one predictor, resulting in a validation accuracy score of 81% and training accuracy score of 85%. A logistic regression model using all predictors resulted in a lower training score (80%) and the same validation score (81%). The relatively low accuracy scores suggested that there may be overfitting taking place, and therefore a regularised model was fit. A regularised logistic regression model (using Lasso) was more accurate (92% validation accuracy) than a logistic regression model with all the predictors, but unregularised. Indeed, from the coefficients it is clear that 12  coefficients were sent to 0 by the lasso regularisation, which suggests that the unregularised model may be overfitting and therefore was increasing bias at the expense of variance. 
@@ -65,7 +65,7 @@ We can also see the amount of predictor variation that each PC cumulatively expl
 
 From the relatively higher performance of the Lasso compared to the unregularized logistic regression we know that preventing overfitting is important to increasing performance. 
 
-# Results and Conclusions
+### Results and Conclusions
 
 
 ![](https://github.com/pfvbell/president/blob/main/Graph%20of%20Predictors.png)
@@ -91,7 +91,7 @@ It is not clear that there is a trend of polling errors between elections on a g
 Due to the inherent uncertainty in using polling data to predict election results in future this project could be improved by more succinctly visualising and communicating the prediction uncertainties. In future it may be necessary to move beyond the dichotomy between so-called ‘fundamentals models’ (using demographic and economic data) and polling data, and triangulate both these approaches using new methods, such as sentiment analysis and social network graph analysis.
 
 
-# References
+### References
 FiveThirtyEight Election Forecast, 2020. https://projects.fivethirtyeight.com/2020-election-forecast/. Accessed November 3, 2020.
 Wikipedia contributors. (2020, December 12). 2020 United States elections. In Wikipedia, The Free Encyclopedia. Retrieved December 13, 2020, from https://en.wikipedia.org/w/index.php?title=2020_United_States_elections&oldid=993755354
 FiveThirtyEight Polling Database, 2020. https://projects.fivethirtyeight.com/polls/. Accessed November 3, 2020.
@@ -114,14 +114,14 @@ Wikipedia contributors. (2020, December 13). 2020 United States House of Represe
 Lichtman, Allan. “The Keys to the White House: Forecast for 2020 · 2.4.” Harvard Data Science Review, PubPub, 27 Oct. 2020, hdsr.mitpress.mit.edu/pub/xhgpcyoa/release/2. 
 
 
-[**Project: Exploring Neural Network interpretability through predicting flight delay](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
+[# Project: Exploring Neural Network interpretability through predicting flight delay](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
 
-# Modeling
+### Modeling
 This project mainly aims to explore the uncertainty in feedforward neural networks. First an artificial neural network was fit. This was an overfit artificial neural network, as can be seen below. The aim was not to fit a very accurate model, but rather to explore the predictions made and the certainty with which they were made. 
 
 ![](https://github.com/pfvbell/Flights_ANN/blob/main/accuracy%20vs%20ppr.png)
 
-# Interpretability step 1: Exploring feature importance
+### Interpretability step 1: Exploring feature importance
 Then a logistic regression proxy model was trained using the predictions from the original artificial neural network. This allowed interpretation of the major predictors for flight delay and I found that the departure hour of the flight was the most important predictor (using sklearn's 'permutation importance' function on the proxy model.)
 
 ![](https://github.com/pfvbell/Flights_ANN/blob/main/feature_importance.png)
@@ -136,7 +136,7 @@ I then plotted the predicted probabilities of delay against the main predictors 
 
 It seems that departure hour is more important than flight count. Overall there seem to be lower probabilities of delay at lower levels of flight count. However, high flight counts are less associated with high delay probabilities later in the day. Indeed, high flight count seems to begin after 5am, which is not surprising. There is a correlation between Scheduled departure hour and scheduled arrival hour, and when both scheduled departure hour and scheduled arrival hour are high the probability of delay seems also to be high. When scheduled departure time and scheduled arrival time are around midnight to 1am there seems to be a higher probability of delay. Indeed, the probability of delay seems to be less closely associated with distance. However, there does seem to be some interaction between distance and scheduled departure hour. There seems to be a trend of long-haul flights departing earlier in the day being more likely to see delays as compared to later in the day.
 
-# Interpretability step 2: Exploring and visualising uncertainty
+### Interpretability step 2: Exploring and visualising uncertainty
 Eight predictors were then bootstrapped to viusalise the variation accross bootstraps.
 
 ![](https://github.com/pfvbell/Flights_ANN/blob/main/variation.png)
@@ -151,7 +151,7 @@ To further measure the uncertainty of the model we build a model which abstains 
 The test accuracy increases as the PPR decreases, apart from an outlier result at PPR=0.2. However, it seems that there is only a very close association between test accuracy and PPR at very low PPR values. This suggests that the PPR threshold for this abstain model may need to be much lower than 0.5 if it is to be highley predictive. Depending on the level of test accuracy needed, it may have to be as low as 0.05. However, this may mean that very few observations could be used. Overall it is clear that many of the bagged predictions are not predicted with high confidence. Indeed, as the PPR decreases the proportion of test observations not abstained also increases. This relationship is close to linear.
 
 
-[**Project : What are the most common global education indicators? (using SQL)**](https://www.kaggle.com/philipbell/sql-world-bank)
+[# Project : What are the most common global education indicators? (using SQL)**](https://www.kaggle.com/philipbell/sql-world-bank)
 Educational Research is relatively [new](http://https://tannerlectures.utah.edu/Allen%20manuscript.pdf) as a field distinct from other social sciences, such as economics and psychology. 
 
 The World Bank International Education database provides a landscape view of both indicators of educational achievement, and also the types of studies conducted. Mining the information on this large dataset therefore provides useful insights into the way in which measurement of educational achievement may itself impact the nature of the education (akin to what Physicists call the 'observer effect'.
@@ -162,7 +162,7 @@ Sub-questions included the average spending as a percentage of GDP for all count
 
 Add Image of output (as graph).
 
-[**Project: Covid data scraper](https://github.com/pfvbell/covid_data_scraper)
+[# Project: Covid data scraper](https://github.com/pfvbell/covid_data_scraper)
 Scraping and Analysing Covid data
 
 Up-to-date covid data was scraped from https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/state. This was then analysed in order to find the highest number of deaths per county and the highest death rate.
