@@ -1,4 +1,3 @@
-# portfolio
 I am currently a Fulbright Scholar at Harvard University studying the intersection of politics, education policy and data science. Email me at pbell@gse.harvard.edu.
 
 # **Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**
