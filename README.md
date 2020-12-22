@@ -1,4 +1,4 @@
-# *Phil Bell's data science portfolio*
+**Phil Bell's data science portfolio**
 
 I am currently a Fulbright Scholar at Harvard University studying the intersection of politics, education policy and data science. Email me at pbell@gse.harvard.edu.
 
