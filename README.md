@@ -3,17 +3,17 @@ I am currently a Fulbright Scholar at Harvard University studying the intersecti
 # **Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**
 [Full Github](https://github.com/pfvbell/president)
 
-I used logistic regression, Random Forest, KNN and neural networks to predict the 2020 Presidential election. Data was scraped from the US census API. Polling, turnout and voter data from 1980 was engineered to build uncertainty into the predictions. See the Github notebook for details on data cleaning, feature selection, model selection and uncertainty visualisation. A final test accuracy of 92.2% was seen on the Lasso Logistic Regression model, and the Random Forest Model saw a final test accuracy of 96%.
+I used logistic regression, Random Forest, KNN and neural networks to predict the 2020 Presidential election. Data was scraped from the US census API. Polling, turnout and voter data from 1980 was engineered to build uncertainty into the predictions. See the [Github notebook](https://github.com/pfvbell/president/blob/main/README.md) for details on data cleaning, feature selection, model selection and uncertainty visualisation. A final test accuracy of 92.2% was seen on the Lasso Logistic Regression model, and the Random Forest Model saw a final test accuracy of 96%.
 
 ![](/images/lasso_preds_map_2.png)
 
 # **Project 2: Kannada MNIST Kaggle submission**
-[Full Github](/images/kannada_neuralnetwork_kaggle)
+[Full Github](https://github.com/pfvbell/kannada_neuralnetwork_kaggle)
 
 ![](/images/one.png) ![](/images/zero.png)
 
 This entry was placed 252 in the kaggle competition with a final test accuracy of 92.8%. Validation Accuracy was 95.8% and train accuracy was 99.7%.
-Images of kannada digits were classified as '0' or '1' using a regularised feed-forward neural network (including L2 and dropout). 2000 epochs were used, with a batch size of 32.
+Images of kannada digits were classified as '0' or '1' using a regularised feed-forward neural network (including L2 and dropout). 2000 epochs were used, with a batch size of 32. See the [Github Readme](https://github.com/pfvbell/kannada_neuralnetwork_kaggle) for more details of the approach taken.
 
 Below is the accuracy (left) and loss (right).
 ![](/images/accuracy_and_loss.png)
@@ -22,7 +22,7 @@ Below is the accuracy (left) and loss (right).
 # **Project 3: Exploring Neural Network interpretability through predicting flight delay**
 [Full Github](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
 
-This project mainly aims to explore interpretatbility and uncertainty in feedforward neural networks. A feedforward neural network was originally fitted. To explore the important features a logistic regression model was trained as a proxy, and permutation importance was performed, as well as other feature analysis. To explore the certainty of the predictions certain data points were bootstrapped to visualise a subsample of uncertainty. Secondly, an 'abstain' model was fit (based on this research: https://openreview.net/forum?id=rJxF73R9tX) which refrained from predicting when certainty levels were below 0.5. For further details see the notebook on the github.
+This project mainly aims to explore interpretatbility and uncertainty in feedforward neural networks. A feedforward neural network was originally fitted. To explore the important features a logistic regression model was trained as a proxy, and permutation importance was performed, as well as other feature analysis. To explore the certainty of the predictions certain data points were bootstrapped to visualise a subsample of uncertainty. Secondly, an 'abstain' model was fit (based on this research: https://openreview.net/forum?id=rJxF73R9tX) which refrained from predicting when certainty levels were below 0.5. For further details [see](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)  the notebook on the github.
 
 ![](/images/train_val_loss.png)
 
