@@ -24,7 +24,7 @@ Below is the accuracy (left) and loss (right).
 ![](/images/Accuracy%20and%20Loss.png)
 
 
-# Project 3: Exploring Neural Network interpretability through predicting flight delay
+# **Project 3: Exploring Neural Network interpretability through predicting flight delay**
 [Full Github](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
 
 This project mainly aims to explore interpretatbility and uncertainty in feedforward neural networks. A feedforward neural network was originally fitted. To explore the important features a logistic regression model was trained as a proxy, and permutation importance was performed, as well as other feature analysis. To explore the certainty of the predictions certain data points were bootstrapped to visualise a subsample of uncertainty. Secondly, an 'abstain' model was fit (based on this research: https://openreview.net/forum?id=rJxF73R9tX) which refrained from predicting when certainty levels were below 0.5. For further details see the notebook on the github.
