@@ -3,7 +3,7 @@ Phil Bell's Data Science Portfolio
 
 
 # Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election
-[Full Github]((https://github.com/pfvbell/president)
+[Full Github](https://github.com/pfvbell/president)
 
 ## Predicting the 2020 Presidential Elections
 
