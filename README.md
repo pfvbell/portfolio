@@ -10,7 +10,7 @@ I used logistic regression, Random Forest, KNN and neural networks to predict th
 ![](/images/lasso_preds_map_2.png)
 
 # **Project 2: Kannada MNIST Kaggle submission**
-[Full Githubn Description](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/README.md)
+[Full Github Description](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/README.md)
 
 ![](/images/one.png) ![](/images/zero.png)
 
