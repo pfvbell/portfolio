@@ -16,7 +16,7 @@ These political, social, and economic consequences make the task of predicting t
 In order to select the best model four sets of models were trained and the best one was selected based on the validation accuracy ('dev in the figures').
 
 
-![](https://github.com/pfvbell/president/blob/main/Graph%20of%20Predictors.png)
+![](/images/Graph%20of%20Predictors.png)
 
 
 Data Description
@@ -25,13 +25,13 @@ The FiveThirtyEight database was used to get the raw data for all polls conducte
 Here we see the results from the 2012 election:
 
 
-![](https://github.com/pfvbell/president/blob/main/2012_results_map.png)
+![](/images/2012_results_map.png)
 
 ### EDA
 The best predictor, from a t-test analysis, was polls_outcome, which indicated the party favored to win in state-wide opinion polls. However, there was uncertainty associated with polls_outcome. 
 
 
-![](https://github.com/pfvbell/president/blob/main/2020_polls_dist.png)
+![](/images/2020_polls_dist.png)
 
 
 From the distribution of 2020 polls (above) we can see that some states are more likely to be polled than others. For example, Arizona and Florida were polled more in 2020 than other states, compared to states such as West Virginia and Wyoming. It seems that states where Democrats and Republicans are closer have more polls taken. This makes sense because there is likely to be a greater premium on predicting these swing states. However, in order to gain a baseline model polls were initially averaged for each year and each state. To introduce further information about the accuracy of the polls into the model, we added a new variable, “polls_strike_rate”, which represented the proportion of previous elections (since 1980) that had been correctly predicted by polls for that state. 
@@ -41,7 +41,7 @@ Feature selection was based on the train and validation accuracies for different
 Here we see the percentage of correct poll outcomes for each state from 1980-2016 (i.e. polls_strike_rate variable for the 2016 election)
 
 
-![](https://github.com/pfvbell/president/blob/main/strike_rate_map.jpg)
+![](/images/strike_rate_map.jpg)
 
 
 Above we can see that polls in some states, such as Florida and North Carolina, Wisconsin, Pennsylvania and Michigan have been less predictive of the outcome of the election compared to polls in other states.
@@ -56,28 +56,28 @@ Since Lasso had succeeded in simplifying the model, and in doing so improved the
 Here we see the first PCs plotting against eachother:
 
 
-![](https://github.com/pfvbell/president/blob/main/PCA_division.png)
+![](/images/PCA_division.png)
 
 
 We can also see the amount of predictor variation that each PC cumulatively explains:
 
-![](https://github.com/pfvbell/president/blob/main/PCA%20Variance.png)
+![](/images/PCA%20Variance.png)
 
 
 From the relatively higher performance of the Lasso compared to the unregularized logistic regression we know that preventing overfitting is important to increasing performance. 
 
 ### Results and Conclusions
 
-![](https://github.com/pfvbell/president/blob/main/Graph%20of%20Predictors.png)
+![](/images/Graph%20of%20Predictors.png)
 
 
 Based on these accuracies Lasso Logistic Regression model was chosen, as its validation  accuracy (91%) was higher than the Random Forest or Neural Network validation scores, even though its training accuracy was not as high as the random Forest training accuracy. The final model chosen was therefore the Lasso model with a final accuracy on the test set of 92.2%.
 
 Lasso Logistic Regression Probabilities of prediction of Republican or Democrat for each state:
-![](https://github.com/pfvbell/president/blob/main/lasso_preds_map_2.png)
+![](/images/lasso_preds_map_2.png)
 
 Random Forest Probabilities of prediction of Republican or Democrat for each state:
-![](https://github.com/pfvbell/president/blob/main/rf_preds_map_2.png)
+![](/images/rf_preds_map_2.png)
 
 It is useful to note that the logistic lasso model and neural network models were less secure in their predictions compared to the random forest model. Therefore, the random forest model is more likely to vary when applied to different sets of data. This makes the model overly flexible, which is another reason why lasso logistic regression is preferable as the final model.
 
@@ -112,17 +112,17 @@ Lichtman, Allan. “The Keys to the White House: Forecast for 2020 · 2.4.” Ha
 
 
 # Project 2: Kannada MNIST Kaggle submission
-[Full Github](https://github.com/pfvbell/kannada_neuralnetwork_kaggle)
+[Full Github](/images/kannada_neuralnetwork_kaggle)
 
 This entry was placed 252 in the kaggle competition with a final test accuracy of 91.8%. Validation Accuracy was 95.8% and train accuracy was 99.7%.
 Images of kannada digits were classified as '0' or '1' using a regularised feed-forward neural network (including L2 and dropout). 2000 epochs were used, with a batch size of 32.
 
-![](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/one.png) ![](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/zero.png)
+![](/images/one.png) ![](/images/zero.png)
 
 I took a sequential approach, changing one hyperparameter at a time and seeing if changing that hyperparameter improved the model. If it did improve the model then I kept the change and tried a different adaptation. However, I took a logical order through the various hyperparameter options. I started by adjusting Adam. I realised that you must start with small numbers (coefficients) for L2 regulaization and increase them. Small numbers mean less penalisation in this instance. However, using too high values for the coefficients resulted in the penalisation reducing the ability for the model to train on the data and therefore resulted in lower scores. Therefore I used a value in between these extremes. My validation score is much higher than the test score on kaggle which may suggest that there is a lot of noise in the data and the model is fitting to that noise. Therefore, data augmentation would be useful in this instance.
 
 Below is the accuracy (left) and loss (right).
-![](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/Accuracy%20and%20Loss.png)
+![](/images/Accuracy%20and%20Loss.png)
 
 
 # Project: Exploring Neural Network interpretability through predicting flight delay
@@ -131,34 +131,34 @@ Below is the accuracy (left) and loss (right).
 ### Modeling
 This project mainly aims to explore the uncertainty in feedforward neural networks. First an artificial neural network was fit. This was an overfit artificial neural network, as can be seen below. The aim was not to fit a very accurate model, but rather to explore the predictions made and the certainty with which they were made. 
 
-![](https://github.com/pfvbell/Flights_ANN/blob/main/train_val_loss.png)
+![](/images/train_val_loss.png)
 
 ### Interpretability step 1: Exploring feature importance
 Then a logistic regression proxy model was trained using the predictions from the original artificial neural network. This allowed interpretation of the major predictors for flight delay and I found that the departure hour of the flight was the most important predictor (using sklearn's 'permutation importance' function on the proxy model.)
 
-![](https://github.com/pfvbell/Flights_ANN/blob/main/feature_importance.png)
+![](/images/feature_importance.png)
 
 Through plotting the probability of delay against departure hour we see that the probability of delay increases as the scheduled departure hour increases. However, it seems to plateau and then decrease as the scheduled departure hour reaches later into the day. This makes sense because we would expect to see delays accruing during the day. However, it should be noted that the probability of delay changes a relatively small amount overall.
 
-![](https://github.com/pfvbell/Flights_ANN/blob/main/Delay%20Probability.png)
+![](/images/Delay%20Probability.png)
 
 I then plotted the predicted probabilities of delay against the main predictors identified in the permutation importance.
 
-![](https://github.com/pfvbell/Flights_ANN/blob/main/dist_departure_hour.png)
+![](/images/dist_departure_hour.png)
 
 It seems that departure hour is more important than flight count. Overall there seem to be lower probabilities of delay at lower levels of flight count. However, high flight counts are less associated with high delay probabilities later in the day. Indeed, high flight count seems to begin after 5am, which is not surprising. There is a correlation between Scheduled departure hour and scheduled arrival hour, and when both scheduled departure hour and scheduled arrival hour are high the probability of delay seems also to be high. When scheduled departure time and scheduled arrival time are around midnight to 1am there seems to be a higher probability of delay. Indeed, the probability of delay seems to be less closely associated with distance. However, there does seem to be some interaction between distance and scheduled departure hour. There seems to be a trend of long-haul flights departing earlier in the day being more likely to see delays as compared to later in the day.
 
 ### Interpretability step 2: Exploring and visualising uncertainty
 Eight predictors were then bootstrapped to viusalise the variation accross bootstraps.
 
-![](https://github.com/pfvbell/Flights_ANN/blob/main/variation.png)
+![](/images/variation.png)
 
 It seems that there is a large probability distribution for both classes. This suggests that we cannot be too certain about our predictions for either class. Indeed, the confidence intervals are wide, which suggests that we cannot be confident that the predictions for either class are in a narrow range. Only two of the probability distributions have confidence intervals that do not reach over the threshold (0.5) into the opposite class to the true class.
 
 # Interpretability step 3: Building an abstain bagging model
 To further measure the uncertainty of the model we build a model which abstains from making predictions when it is uncertain. The Posterior Probability Ratio (the proportion of predictions which cross the 0.5 boundary).
 
-![](https://github.com/pfvbell/Flights_ANN/blob/main/accuracy%20vs%20ppr.png)
+![](/images/accuracy%20vs%20ppr.png)
 
 The test accuracy increases as the PPR decreases, apart from an outlier result at PPR=0.2. However, it seems that there is only a very close association between test accuracy and PPR at very low PPR values. This suggests that the PPR threshold for this abstain model may need to be much lower than 0.5 if it is to be highley predictive. Depending on the level of test accuracy needed, it may have to be as low as 0.05. However, this may mean that very few observations could be used. Overall it is clear that many of the bagged predictions are not predicted with high confidence. Indeed, as the PPR decreases the proportion of test observations not abstained also increases. This relationship is close to linear.
 
