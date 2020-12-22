@@ -4,8 +4,6 @@ I am currently a Fulbright Scholar at Harvard University studying the intersecti
 # **Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**
 [Full Github](https://github.com/pfvbell/president)
 
-## Predicting the 2020 Presidential Elections
-
 I used logistic regression, Random Forest, KNN and neural networks to predict the 2020 Presidential election. Data was scraped from the US census API. Polling, turnout and voter data from 1980 was engineered to build uncertainty into the predictions. See the Github notebook for details on data cleaning, feature selection, model selection and uncertainty visualisation. A final test accuracy of 92.2% was seen on the Lasso Logistic Regression model, and the Random Forest Model saw a final test accuracy of 96%.
 
 ![](/images/lasso_preds_map_2.png)
