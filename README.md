@@ -36,12 +36,12 @@ High dimensionality is one aspect of big data. Using a big data set with over 70
 
 Principal Component Analysis was used to decompose the high dimensional data and then visualise high-dimensionality in a low-dimensional image (see below). Cross-validation was used to predict the best number of principal components to train a logisitc regression model, and then the same technique was used to pick the best PC number to train a multi-nomial logistic regression model that predicted the multi-class problem of cancer subtype.
 
-![](/images/Visualising%20PCA.png)
+![](/images/Visualising_PCA.png)
 
 
 Finally, to understand how PCA with logistic regression had made classification decisions the decision boundaries of two models were plotted. See the [full project](https://github.com/pfvbell/pca/blob/main/README.md) for more details. 
 
-![](/images/decision%20boundary.png)
+![](/images/decision_boundary.png)
 ![](/images/pca_ridge_quadratic.png)
 
 # **Project 5: What are the most common global education indicators? (using SQL)**
