@@ -29,6 +29,20 @@ This project mainly aims to explore interpretatbility and uncertainty in feedfor
 ![](/images/train_val_loss.png)
 
 
+# **Project 4: Using PCA with high-demensionality data to predict cancer types**
+
+High dimensionality is one aspect of big data. Using a big data set with over 7000 predictors I built several classification models to distinguish between two related classes of cancer, acute lymphoblastic leukemia (ALL) and acute myeloid leukemia (AML), using gene expression measurements. Each row in the data file corresponds to a tumor tissue sample from a patient with one of the two forms of leukemia. 
+
+Principal Component Analysis was used to decompose the high dimensional data and then visualise high-dimensionality in a low-dimensional image (see below). Cross-validation was used to predict the best number of principal components to train a logisitc regression model, and then the same technique was used to pick the best PC number to train a multi-nomial logistic regression model that predicted the multi-class problem of cancer subtype.
+
+![](/images/Visualising%20PCA.png)
+
+
+Finally, to understand how PCA with logistic regression had made classification decisions the decision boundaries of two models were plotted. See the [full project](https://github.com/pfvbell/pca/blob/main/README.md) for more details. 
+
+![](/images/decision%20boundary.png)
+![](/images/pca_ridge_quadratic.png)
+
 # **Project 4: What are the most common global education indicators? (using SQL)**
 [Full Notebook](https://www.kaggle.com/philipbell/sql-world-bank)
 
