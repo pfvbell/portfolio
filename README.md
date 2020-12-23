@@ -30,6 +30,7 @@ This project mainly aims to explore interpretatbility and uncertainty in feedfor
 
 
 # **Project 4: Using PCA with high-demensionality data to predict cancer types**
+[Full Githut Description](https://github.com/pfvbell/pca/blob/main/README.md)
 
 High dimensionality is one aspect of big data. Using a big data set with over 7000 predictors I built several classification models to distinguish between two related classes of cancer, acute lymphoblastic leukemia (ALL) and acute myeloid leukemia (AML), using gene expression measurements. Each row in the data file corresponds to a tumor tissue sample from a patient with one of the two forms of leukemia. 
 
@@ -43,7 +44,7 @@ Finally, to understand how PCA with logistic regression had made classification 
 ![](/images/decision%20boundary.png)
 ![](/images/pca_ridge_quadratic.png)
 
-# **Project 4: What are the most common global education indicators? (using SQL)**
+# **Project 5: What are the most common global education indicators? (using SQL)**
 [Full Notebook](https://www.kaggle.com/philipbell/sql-world-bank)
 
 Educational Research is relatively [new](http://https://tannerlectures.utah.edu/Allen%20manuscript.pdf) as a field distinct from other social sciences, such as economics and psychology. 
@@ -56,7 +57,7 @@ Sub-questions included the average spending as a percentage of GDP for all count
 
 Add Image of output (as graph).
 
-# **Project 5: Covid data scraper**
+# **Project 6: Covid data scraper**
 [Full Github Description](https://github.com/pfvbell/covid_data_scraper/blob/main/README.md)
 
 ## Scraping and Analysing Covid data
