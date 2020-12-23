@@ -30,7 +30,7 @@ This project mainly aims to explore interpretatbility and uncertainty in feedfor
 
 
 # **Project 4: Using PCA with high-demensionality data to predict cancer types**
-[Full Githut Description](https://github.com/pfvbell/pca/blob/main/README.md)
+[Full Github Description](https://github.com/pfvbell/pca/blob/main/README.md)
 
 High dimensionality is one aspect of big data. Using a big data set with over 7000 predictors I built several classification models to distinguish between two related classes of cancer, acute lymphoblastic leukemia (ALL) and acute myeloid leukemia (AML), using gene expression measurements. Each row in the data file corresponds to a tumor tissue sample from a patient with one of the two forms of leukemia. 
 
