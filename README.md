@@ -5,7 +5,7 @@ I am currently a Fulbright Scholar at Harvard University studying the intersecti
 # **Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**
 [Full Github Description](https://github.com/pfvbell/president/blob/main/README.md)
 
-I used logistic regression, Random Forest, KNN and neural networks to predict the 2020 Presidential election. Data was scraped from the US census API. Polling, turnout and voter data from 1980 was engineered to build uncertainty into the predictions. See the [Github notebook](https://github.com/pfvbell/president/blob/main/README.md) for details on data cleaning, feature selection, model selection and uncertainty visualisation. A final test accuracy of 92.2% was seen on the Lasso Logistic Regression model, and the Random Forest Model saw a final test accuracy of 96%.
+I used logistic regression, Random Forest, KNN and neural networks to predict the 2020 Presidential election. Data was scraped from the US census API. Polling, turnout and voter data from 1980 was engineered to build uncertainty into the predictions. Missing data from early elections was imputed using a linear regression model trained on other complete predictors. See the [Github notebook](https://github.com/pfvbell/president/blob/main/README.md) for details on data cleaning, feature selection, model selection and uncertainty visualisation. A final test accuracy of 92.2% was seen on the Lasso Logistic Regression model, and the Random Forest Model saw a final test accuracy of 96%.
 
 ![](/images/lasso_preds_map_2.png)
 
@@ -24,7 +24,7 @@ Below is the accuracy (left) and loss (right).
 # **Project 3: Exploring Neural Network interpretability through predicting flight delay**
 [Full Github Description](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
 
-This project mainly aims to explore interpretatbility and uncertainty in feedforward neural networks. A feedforward neural network was originally fitted. To explore the important features a logistic regression model was trained as a proxy, and permutation importance was performed, as well as other feature analysis. To explore the certainty of the predictions certain data points were bootstrapped to visualise a subsample of uncertainty. Secondly, an 'abstain' model was fit (based on this research: https://openreview.net/forum?id=rJxF73R9tX) which refrained from predicting when certainty levels were below 0.5. For further details [see](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)  the notebook on the github.
+This project mainly aims to explore interpretatbility and uncertainty in feedforward neural networks. A feedforward neural network was originally fitted to predict flight delays from 810 predictors. All categorical variables, including airports, were one-hot-encoded. To explore the important features a logistic regression model was trained as a proxy, and permutation importance was performed, as well as other feature analysis. To explore the certainty of the predictions certain data points were bootstrapped to visualise a subsample of uncertainty. Secondly, an 'abstain' model was fit (based on this research: https://openreview.net/forum?id=rJxF73R9tX) which refrained from predicting when certainty levels were below 0.5. For further details [see](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)  the notebook on the github.
 
 ![](/images/train_val_loss.png)
 
