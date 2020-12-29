@@ -9,6 +9,13 @@ I used logistic regression, Random Forest, KNN and neural networks to predict th
 
 ![](/images/lasso_preds_map_2.png)
 
+# **Project 2: Zambia Higher Education Spatial Analysis (ongoing)**
+[Full Github Description](https://github.com/pfvbell/zambia_hmlp/blob/main/README.md)
+As part of the Harvard Ministerial Leadership Programme I am working with the Zambian government to support gender equality in Higher Education. The latitude and longitude of Zambian private and public universities was geocoded and mapped alongside demographic data in order to make inferences that inform policy recommendations.
+
+![](/images/Pop_density.png)
+![](/images/working_pop.png)
+
 # **Project 2: Kannada MNIST Kaggle submission**
 [Full Github Description](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/README.md)
 
