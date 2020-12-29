@@ -5,12 +5,16 @@ I am currently a Fulbright Scholar at Harvard University studying the intersecti
 # **Project 1: Using NN, RF and Logistic Regression to predict the 2020 Presidential election**
 [Full Github Description](https://github.com/pfvbell/president/blob/main/README.md)
 
+Packages used: Pandas, Numpy, SKlearn, Keras.
+
 I used logistic regression, Random Forest, KNN and neural networks to predict the 2020 Presidential election. Data was scraped from the US census API. Polling, turnout and voter data from 1980 was engineered to build uncertainty into the predictions. Missing data from early elections was imputed using a linear regression model trained on other complete predictors. See the [Github notebook](https://github.com/pfvbell/president/blob/main/README.md) for details on data cleaning, feature selection, model selection and uncertainty visualisation. A final test accuracy of 92.2% was seen on the Lasso Logistic Regression model, and the Random Forest Model saw a final test accuracy of 96%.
 
 ![](/images/lasso_preds_map_2.png)
 
 # **Project 2: Zambia Higher Education Spatial Analysis (ongoing)**
 [Full Github Description](https://github.com/pfvbell/zambia_hmlp/blob/main/README.md)
+
+Packages used: Geopandas, Folium.
 
 As part of the Harvard Ministerial Leadership Programme I am working with the Zambian government to support gender equality in Higher Education. The latitude and longitude of Zambian private and public universities was geocoded and mapped alongside demographic data in order to make inferences that inform policy recommendations.
 
@@ -19,6 +23,8 @@ As part of the Harvard Ministerial Leadership Programme I am working with the Za
 
 # **Project 3: Kannada MNIST Kaggle submission**
 [Full Github Description](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/README.md)
+
+Packages Used: LIME, Keras.
 
 ![](/images/one.png) ![](/images/zero.png)
 
