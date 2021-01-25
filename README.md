@@ -12,7 +12,7 @@ I used logistic regression, Random Forest, KNN and neural networks to predict th
 ![](/images/lasso_preds_map_2.png)
 
 # **Project 2: Dog search app using NLP and computer vision**
-At [Harvard ComputeFest 2021](https://www.computefest.seas.harvard.edu/) I made an app using state-of-the art computer vision and NLP models. Specifically, CNNs and distillation was used to make a feature for uploading an image to find similar-looking dogs. A fine-tuned double-head GPT-2 NLP model was trained with a simulated dog dialogue dataset to make a chat-bot. The app was hosted on AWS and docker and Kubernetes was used for deployment.
+At [Harvard ComputeFest 2021](https://www.computefest.seas.harvard.edu/) I made an app using state-of-the art computer vision and NLP models. Specifically, CNNs and distillation were used to make a feature for uploading an image to find similar-looking dogs. A fine-tuned double-head GPT-2 NLP model was trained with a simulated dog dialogue dataset to make a chat-bot. The app was hosted on AWS. Docker and Kubernetes were used for deployment.
 
 ![](/images/woofwoof.png)
 
