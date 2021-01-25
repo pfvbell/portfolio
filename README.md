@@ -26,7 +26,7 @@ As part of the Harvard Ministerial Leadership Programme I am working with the Za
 ![](/images/Pop_density_small.png)
 ![](/images/working_pop_small.png)
 
-# **Project 3: Kannada MNIST Kaggle submission**
+# **Project 4: Kannada MNIST Kaggle submission**
 [Full Github Description](https://github.com/pfvbell/kannada_neuralnetwork_kaggle/blob/main/README.md)
 
 Packages Used: LIME, Keras.
@@ -40,7 +40,7 @@ Below is the accuracy (left) and loss (right).
 ![](/images/accuracy_and_loss.png)
 
 
-# **Project 4: Exploring Neural Network interpretability through predicting flight delay**
+# **Project 5: Exploring Neural Network interpretability through predicting flight delay**
 [Full Github Description](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)
 
 This project mainly aims to explore interpretatbility and uncertainty in feedforward neural networks. A feedforward neural network was originally fitted to predict flight delays from 810 predictors. All categorical variables, including airports, were one-hot-encoded. To explore the important features a logistic regression model was trained as a proxy, and permutation importance was performed, as well as other feature analysis. To explore the certainty of the predictions certain data points were bootstrapped to visualise a subsample of uncertainty. Secondly, an 'abstain' model was fit (based on this research: https://openreview.net/forum?id=rJxF73R9tX) which refrained from predicting when certainty levels were below 0.5. For further details [see](https://github.com/pfvbell/Flights_ANN/blob/main/README.md)  the notebook on the github.
@@ -48,7 +48,7 @@ This project mainly aims to explore interpretatbility and uncertainty in feedfor
 ![](/images/train_val_loss.png)
 
 
-# **Project 5: Using PCA with high-demensionality data to predict cancer types**
+# **Project 6: Using PCA with high-demensionality data to predict cancer types**
 [Full Github Description](https://github.com/pfvbell/pca/blob/main/README.md)
 
 High dimensionality is one aspect of big data. Using a big data set with over 7000 predictors I built several classification models to distinguish between two related classes of cancer, acute lymphoblastic leukemia (ALL) and acute myeloid leukemia (AML), using gene expression measurements. Each row in the data file corresponds to a tumor tissue sample from a patient with one of the two forms of leukemia. 
