@@ -2,8 +2,8 @@
 
 Currently an AI engineer at Cognino AI and formerly a Fulbright Scholar at Harvard University studying the intersection of ML, policy and data science. Email me at pbell@gse.harvard.edu.
 
-# **Project 1: Using NLP to decompose authorial style in the Hebrew Bible **
-[Full Github Description](https://github.com/pfvbell/president/blob/main/README.md)
+# **Project 1: Using NLP to decompose authorial style in the Hebrew Bible**
+[Github](https://github.com/pfvbell/authorial_style/blob/main/Decomposing_Authorial_Style.ipynb)
 
 This project was completed as part of CS109b: Advanced topics in data science. The main aim was to use machine learning to support an important debate within the Biblical scholarship community over authorship of the Hebrew Bible. It has been traditionally believed that the Hebrew Bible is a composite text woven from several seperate sources. Using literary analysis, Biblical scholars have identified differences in style between several seperate sections of text. 
 
